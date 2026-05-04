@@ -1,0 +1,13 @@
+{
+  "name": "Note Taker",
+  "description": "Take notes while browsing different apps and websites",
+  "version": "1.0.0",
+  "author": "SilvaShell Team",
+  "assemblyPath": "NoteTaker.dll",
+  "className": "SilvaShell.Plugins.NoteTaker.NoteTakerPlugin",
+  "interfaces": [
+    "IToolbarPlugin",
+    "IShortcutPlugin",
+    "IAppIntegrationPlugin"
+  ]
+}

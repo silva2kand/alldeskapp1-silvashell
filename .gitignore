@@ -1,0 +1,51 @@
+# Build outputs
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.tmp
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# WebView2 user data (contains login info)
+**/WebView2UserData/
+
+# Package restore
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+packages/
+*.nupkg
+
+# .NET Core
+*.project.lock.json
+*.project.fragment.lock.json
+
+# Temporary files
+*.tmp
+*.temp

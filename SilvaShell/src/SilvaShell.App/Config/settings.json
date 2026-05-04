@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "settings": {
+    "rememberLastApp": true,
+    "enableTTS": true,
+    "defaultVoiceCulture": "ta-IN",
+    "enableHotkeys": true
+  }
+}

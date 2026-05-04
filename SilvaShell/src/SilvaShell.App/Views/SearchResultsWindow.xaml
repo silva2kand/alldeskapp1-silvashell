@@ -1,0 +1,58 @@
+<Window x:Class="SilvaShell.App.Views.SearchResultsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Search Results" Height="600" Width="800"
+        WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="ResultsHeader"
+                   Grid.Row="0"
+                   Margin="16,16,16,8"
+                   FontSize="16"
+                   FontWeight="Bold"/>
+
+        <ListView x:Name="ResultsListView"
+                  Grid.Row="1"
+                  Margin="16,0,16,16"
+                  SelectionMode="Single"
+                  MouseDoubleClick="ResultsListView_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Tab" Width="150">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding TabTitle}" FontWeight="SemiBold"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Matches" Width="80">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Count}" Foreground="Green" FontWeight="Bold"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Preview" Width="400">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Snippet}" TextWrapping="Wrap" MaxHeight="60"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="16">
+            <Button Content="Close" Width="80" Click="CloseButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "url": "https://chat.deepseek.com",
+    "icon": "assets/icons/deepseek.png",
+    "group": "AI",
+    "allowTerminal": false,
+    "requiresLogin": false,
+    "regionSensitive": false,
+    "languageFocus": "global"
+  },
+  {
+    "id": "qwen-chat",
+    "name": "Qwen Chat",
+    "url": "https://chat.qwen.ai",
+    "icon": "assets/icons/qwen-chat.png",
+    "group": "AI",
+    "allowTerminal": false,
+    "requiresLogin": true
+  },
+  {
+    "id": "qwen-studio",
+    "name": "Qwen Studio",
+    "url": "https://qwenlm.qwen.ai",
+    "icon": "assets/icons/qwen-studio.png",
+    "group": "AI",
+    "allowTerminal": false,
+    "requiresLogin": true
+  },
+  {
+    "id": "lmarena",
+    "name": "LMArena",
+    "url": "https://lmarena.ai",
+    "icon": "assets/icons/lmarena.png",
+    "group": "AI",
+    "allowTerminal": false,
+    "requiresLogin": false
+  },
+  {
+    "id": "minimax",
+    "name": "MiniMax",
+    "url": "https://www.minimaxi.com/en",
+    "icon": "assets/icons/minimax.png",
+    "group": "AI",
+    "allowTerminal": false,
+    "requiresLogin": true
+  },
+  {
+    "id": "kimi",
+    "name": "Kimi",
+    "url": "https://kimi.moonshot.cn",
+    "icon": "assets/icons/kimi.png",
+    "group": "AI",
+    "allowTerminal": false,
+    "requiresLogin": true
+  },
+  {
+    "id": "outlook-personal",
+    "name": "Outlook (Personal)",
+    "url": "https://outlook.live.com/mail",
+    "icon": "assets/icons/outlook-personal.png",
+    "group": "Email",
+    "allowTerminal": false,
+    "requiresLogin": true
+  },
+  {
+    "id": "outlook-work",
+    "name": "Outlook (Work)",
+    "url": "https://outlook.office.com/mail",
+    "icon": "assets/icons/outlook-work.png",
+    "group": "Email",
+    "allowTerminal": false,
+    "requiresLogin": true
+  },
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp",
+    "url": "https://web.whatsapp.com",
+    "icon": "assets/icons/whatsapp.png",
+    "group": "Chat",
+    "allowTerminal": false,
+    "requiresLogin": true
+  }
+]
